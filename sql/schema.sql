@@ -35,3 +35,17 @@ CREATE TABLE customers (
     age SMALLINT,
     postal_code TEXT
 );
+
+
+CREATE TABLE transactions (
+    t_dat DATE,
+    customer_id TEXT REFERENCES customers(customer_id),
+    article_id BIGINT REFERENCES articles(article_id),
+    price NUMERIC,
+    sales_channel_id SMALLINT
+);
+
+
+CREATE TABLE transactions_2019 AS
+SELECT * FROM transactions
+WHERE t_dat BETWEEN '2019-01-01' AND '2019-12-31';
