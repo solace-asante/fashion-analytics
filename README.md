@@ -1,7 +1,7 @@
 ## Author
 
-Built by Solace Asante. 
-GitHub: https://github.com/solace-asante
+Built by Solace Asante
+https://github.com/solace-asante
 
 # H&M Fashion Retail Analysis (2019)
 
